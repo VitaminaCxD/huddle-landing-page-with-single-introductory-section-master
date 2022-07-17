@@ -1,0 +1,13 @@
+:root {
+    scroll-behavior: smooth;
+
+    /* Colors */
+
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+
+    /* Fonts */
+
+    --font-1: 'Poppins', sans-serif; /* Headings  Weights: 400, 600 */
+    --font-2: 'Open Sans', sans-serif; /* Body Weights: 400 */
+}
