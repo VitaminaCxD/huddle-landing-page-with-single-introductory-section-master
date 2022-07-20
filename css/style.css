@@ -133,10 +133,15 @@ body {
 .social-container__link {
     color: var(--white);
     margin: 0 5px;
-    padding: 7px 9px;
+    padding: 9px 9px;
     border: 1px solid var(--white);
     border-radius: 50%;
 }
+
+.fa-facebook-f, .fa-instagram {
+    padding: 2px;
+}
+
 
 .social-container__link:focus {
     color: var(--soft-magenta);
