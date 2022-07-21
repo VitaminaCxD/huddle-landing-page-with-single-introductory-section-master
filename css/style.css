@@ -63,7 +63,7 @@ body {
 .img-container {
     display: flex;
     justify-content: center;
-    min-width: 100%;
+    width: 100%;
 }
 
 .img-container__img {
@@ -73,7 +73,7 @@ body {
 }
 
 .content {
-    min-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,6 +112,7 @@ body {
     border-radius: 20px;
     color: var(--violet);
     font-size: .8rem;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, .5);
 }
 
 .content__button:focus {
@@ -146,4 +147,96 @@ body {
 .social-container__link:focus {
     color: var(--soft-magenta);
     border: 1px solid var(--soft-magenta);
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1444px) {
+
+    .header::after {
+        background-image: url("../images/bg-desktop.svg");
+        width: 100%;
+        height: 100vh;
+    }
+
+    .icon-container__icon {
+        width: 25%;
+        margin-left: 3rem;
+    }
+
+    .main {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0;
+        margin: 0;
+        padding: 3rem 5rem;
+    }
+
+    .img-container, .content {
+        width: 50%;
+    }
+
+    .img-container__img {
+        width: 100%;
+    }
+
+    .content {
+        align-items: flex-start;
+        text-align: left;
+        margin-top: 5rem;
+    }
+
+    .content__container {
+        width:  70%;
+        margin-left: 3rem;
+    }
+
+    .content__h2 {
+        margin: 0 0 1rem 0;
+        font-size: 3rem;
+    }
+
+    .content__p {
+        font-size: 1.2rem;
+    }
+
+    .content__button {
+        width: 30%;
+        padding: 18px 7px;
+        border-radius: 25px;
+        font-size: 1.2em;
+    }
+
+    .content__button:hover {
+        background: var(--soft-magenta);
+        color: var(--white);
+        cursor: pointer;
+    }
+
+    .footer {
+        justify-content: flex-end;
+        margin: 1rem 0 4rem 0;
+    }
+    
+    .social-container__nav {
+        padding-right: 4rem;
+        font-size: 1.2rem;
+    }
+
+    .social-container__link {
+        padding: 11px;
+    }
+
+    .fa-facebook-f {
+        padding: 4px;
+    }
+
+    .social-container__link:hover {
+        color: var(--soft-magenta);
+        border: 1px solid var(--soft-magenta);
+    }
+
 }
